@@ -13,7 +13,7 @@
     showSlides(slideIndex);
 
     // Next/previous controls
-    function plusSlides(n) {
+    function plusSlides(n){
     showSlides(slideIndex += n);
     }
 
