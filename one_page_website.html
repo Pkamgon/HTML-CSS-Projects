@@ -2,193 +2,260 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<tittle>The wall paper background</title>
+	<title>The wall paper background</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" charset="UTF-8" href="One_Page_website.css">
+
 	</head>
 	<body>
+		<!--NAV -->
+		<nav>
+		<ul>
+			<a href="#home"><li>HOME</li></a>
+			<a href="#gallery"><li>GALLERY</li></a>
+			<a href="#contact"><li>RESERVATIONS</li></a>
+		</ul>
+		</nav>
 	
-	<!--NAV -->
-	<div>
-		<div>
-			<ul>
-				<a href="#home"><li>HOME</li></a>
-				<a href="#gallery"><li>GALLERY</li></a>
-				<a href="#contact"><li>RESERVATIONS</li></a>
-			</ul>
-		</div>
-	</div>
+		<!--END NAV -->
 	
-	<!--END NAV -->
-	
-	<!--- HOME -->
-	<div id="home">
-		<div>
+		<!--- HOME -->
+		<div id="home">
 			<div>
 				<span>The wall Paper</span>
 			</div>
 		</div>
-	</div>
-	<!-- END HOME -->
-	
-	<!-- GALLERY -->
-	<section>
-		<div id="gallery">
-			<hi>Gallery</h1>
-			<div>
+		<div class="row">
+		<div class="column">
+			<img src="thumbnail_1.jpg" onclick="openModal();currentSlide(1)"
+			class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="thumbnail_2.jpg" onclick="openModal();currentSlide(2)"
+			class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="thumbnail_3.jpg" onclick="openModal();currentSlide(3)"
+			class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="thumbnail_4.jpg" onclick="openModal();currentSlide(4)"
+			class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="thumbnail_5.jpg" onclick="openModal();currentSlide(5)"
+			class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="thumbnail_6.jpg" onclick="openModal();currentSlide(6)"
+			class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="thumbnail_7.jpg" onclick="openModal();currentSlide(7)"
+			class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="thumbnail_8.jpg" onclick="openModal();currentSlide(8)"
+			class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="thumbnail_9.jpg" onclick="openModal();currentSlide(9)"
+			class="hover-shadow">
+		</div>
+
+			<!--The modal light box-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 /9</div>
+				<img src="thumbnail_1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 /9</div>
+				<img src="thumbnail_2.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 /9</div>
+				<img src="thumbnail_3.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 /9</div>
+				<img src="thumbnail_4.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 /9</div>
+				<img src="thumbnail_5.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">6 /9</div>
+				<img src="thumbnail_6.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">6 /9</div>
+				<img src="thumbnail_6.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">7 /9</div>
+				<img src="thumbnail_7.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">8 /9</div>
+				<img src="thumbnail_8.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">9 /9</div>
+				<img src="thumbnail_9.jpg" style="width:100%">
+			</div>
+
+			<!--Next/Previous controls-->
+
+			<a class="prev" onclick="plusSlides(-1)">&#1094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Caption text-->
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
 			
-			    <!--PHOTO CONTAINER 1 -->
+
+			</div>
+		</div>
+		<!-- END HOME -->
+	
+		<!-- GALLERY -->
+		<section>
+		<div id="gallery">
+			<h1>Gallery</h1>
+		</div>
+			
+			<!--PHOTO CONTAINER 1 -->
 				<div>
-					<div>
-						<img src="C:\Users\14039\Desktop\Web_Project\Images\Thumb\thumbnail_1.jpg" alt="Image of The Paris Tower">
+					<img src="thumbnail_1.jpg"  with="200" height="121" alt="Image of The Paris Tower">
 						<div>
 							<h3>Click to enlarge</h3>
 							<p>We have thousands of Tourist visiting this tower yearly</p>
 						</div>
-					</div>
 				</div>
 				
 				<!--END PHOTO CONTAINER 1 -->
 				
 				 <!--PHOTO CONTAINER 2 -->
 				<div>
-					<div>
-						<img src="C:\Users\14039\Desktop\Web_Project\Images\Thumb\thumbnail_2.jpg" alt="The Lake Louis View">
+					<img src="thumbnail_2.jpg" with="200" height="121" alt="The Lake Louis View">
 						<div>
 							<h3>Click to enlarge</h3>
 							<p>We have thousands of Tourist visiting this site yearly</p>
 						</div>
-					</div>
 				</div>
 				
 				<!--END PHOTO CONTAINER 2 -->
 				
 				 <!--PHOTO CONTAINER 3 -->
 				<div>
-					<div>
-						<img src="C:\Users\14039\Desktop\Web_Project\Images\Thumb\thumbnail_3.jpg" alt="Another View From Banf">
+						<img src="thumbnail_3.jpg" with="200" height="121" alt="Another View From Banf">
 						<div>
 							<h3>Click to enlarge</h3>
 							<p>We have thousands of Tourist visiting Baff yearly</p>
 						</div>
-					</div>
 				</div>
 				
 				<!--END PHOTO CONTAINER 3 -->
 				
 				 <!--PHOTO CONTAINER 4 -->
 				<div>
-					<div>
-						<img src="C:\Users\14039\Desktop\Web_Project\Images\Thumb\thumbnail_4.jpg" alt="Banf View From Another Angle">
-						<div>
-							<h3>Click to enlarge</h3>
-							<p>We have thousands of Tourist visiting Baff yearly</p>
-						</div>
-					</div>
+					<img src="thumbnail_4.jpg" with="200" height="121" alt="Banf View From Another Angle">
+						<h3>Click to enlarge</h3>
+						<p>We have thousands of Tourist visiting Baff yearly</p>
 				</div>
 				
 				<!--END PHOTO CONTAINER 4 -->
 				
 				 <!--PHOTO CONTAINER 5 -->
 				<div>
-					<div>
-						<img src="C:\Users\14039\Desktop\Web_Project\Images\Thumb\thumbnail_5.jpg" alt="Image Of An Ancient Home">
-						<div>
-							<h3>Click to enlarge</h3>
-							<p>We have thousands of Tourist visiting this home yearly</p>
-						</div>
-					</div>
+					<img src="thumbnail_5.jpg" with="200" height="121" alt="Image Of An Ancient Home">
+					
+					<h3>Click to enlarge</h3>
+					<p>We have thousands of Tourist visiting this home yearly</p>
 				</div>
 				
 				<!--END PHOTO CONTAINER 5 -->
 				
 				 <!--PHOTO CONTAINER 6 -->
 				<div>
-					<div>
-						<img src="C:\Users\14039\Desktop\Web_Project\Images\Thumb\thumbnail_6.jpg" alt="Image of The Bow River">
-						<div>
-							<h3>Click to enlarge</h3>
-							<p>We have thousands of Tourist visiting this river yearly</p>
-						</div>
-					</div>
+					<img src="thumbnail_6.jpg" with="200" height="121" alt="Image of The Bow River">
+					<h3>Click to enlarge</h3>
+					<p>We have thousands of Tourist visiting this river yearly</p>
 				</div>
 				
 				<!--END PHOTO CONTAINER 6 -->
 				
 				 <!--PHOTO CONTAINER 7 -->
 				<div>
-					<div>
-						<img src="C:\Users\14039\Desktop\Web_Project\Images\Thumb\thumbnail_7.jpg" alt="Image of Baff At Night">
-						<div>
-							<h3>Click to enlarge</h3>
-							<p>We have thousands of Tourist visiting Baff yearly</p>
-						</div>
-					</div>
+					<img src="thumbnail_7.jpg" with="200" height="121" alt="Image of Baff At Night"
+					<h3>Click to enlarge</h3>
+					<p>We have thousands of Tourist visiting Baff yearly</p>
 				</div>
 				
 				<!--END PHOTO CONTAINER 7 -->
 				
 				 <!--PHOTO CONTAINER 8 -->
 				<div>
-					<div>
-						<img src="C:\Users\14039\Desktop\Web_Project\Images\Thumb\thumbnail_8.jpg" alt="Image of Lake Louis 1">
-						<div>
-							<h3>Click to enlarge</h3>
-							<p>We have thousands of Tourist visiting this tower yearly</p>
-						</div>
-					</div>
+					<img src="thumbnail_8.jpg" with="200" height="121" alt="Image of Lake Louis 1">
+					<h3>Click to enlarge</h3>
+					<p>We have thousands of Tourist visiting this tower yearly</p>
 				</div>
 				
 				<!--END PHOTO CONTAINER 8 -->
 				
 				 <!--PHOTO CONTAINER 9 -->
 				<div>
-					<div>
-						<img src="C:\Users\14039\Desktop\Web_Project\Images\Thumb\thumbnail_9.jpg" alt="Image of Lake Louis 2">
-						<div>
-							<h3>Click to enlarge</h3>
-							<p>We have thousands of Tourist visiting this tower yearly</p>
-						</div>
-					</div>
+					<img src="thumbnail_9.jpg" with="200" height="121" alt="Image of Lake Louis 2">
+					<h3>Click to enlarge</h3>
+					<p>We have thousands of Tourist visiting this tower yearly</p>
 				</div>
 				
 				<!--END PHOTO CONTAINER 9 -->
-			</div>
+		
+		</section>
+		<!--END GALLERY -->
+		<!--contact Information -->
+
+		<section>
+		<div id="contact">
+		<h1>Reservations</h1>
+		<h2><span>Great Wall paper backgrounds for Your Apps</span></h2>
+		<p> Please provide us with your basic contact information</p>
+			<form action="create id" method="post">
+				First name:<input type="text" name="first_name"><br>
+				last name: <input type="text" name="last_name"><br>
+				Email:     <input type="email" name="email"><br>
+				Password:  <input type="password" name="password"><br>
+							<input type="submit" value="submit">
+			</form>
 		</div>
-	</div>
-	</section>
-	<!--END GALLERY -->
-	<!--contact Information -->
 
-	<section>
-	<div id="contact">
-		<div>
-			<h1>Reservations</h1>
-			<div>
-				<h2><span>Great Wall paper backgrounds for Your Apps</span></h2>
-			<p> Please provide us with your basic contact information</p>
-				<div>
-					<form action="create id" method="post">
-						First name:<input type="text" name="first_name"><br>
-						last name: <input type="text" name="last_name"><br>
-						Email:     <input type="email" name="email"><br>
-						Password:  <input type="password" name="password"><br>
-								   <input type="submit" value="submit">
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	</section>
+		</section>
 
-	<!-- END OF CONTACT INFORMATION -->
-	<!--FOOTER -->
+		<!-- END OF CONTACT INFORMATION -->
+		<!--FOOTER -->
 
-	<div id="footer">
-	https://www.thewowstyle.com/wp-content/uploads/2015/01/Most-Beautiful-Places-in-the-World.jpg &nbsp;|&nbsp &copy; 2018
-	
-	</div>
-	<!-- END FOOTER -->
-
+		<div id="footer">
+		https://www.thewowstyle.com/wp-content/uploads/2015/01/Most-Beautiful-Places-in-the-World.jpg &nbsp;|&nbsp &copy; 2018</div>
+		<!-- END FOOTER -->
+		
+		<script src="JS/One_Page_website.js charset=UTF-8"></script>
 	</body>
 
 </html>
