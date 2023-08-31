@@ -25,6 +25,143 @@
 			</div>
 		</div>
 		<!-- END HOME -->
+
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+				<img src="thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="thumbnail_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="thumbnail_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="thumbnail_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
+			<div class="column">
+	  			<img src="thumbnail_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="thumbnail_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+			</div>
+			<div class="column">
+	  			<img src="thumbnail_7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="thumbnail_8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+			</div>
+			<div class="column">
+	  			<img src="thumbnail_9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+			</div>
+  		</div>
+  
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+	
+			<div class="mySlides">
+				<div class="numbertext">1 / 9</div>
+				<img src="thumbnail_1.jpg" style="width:100%">
+			</div>
+	
+			<div class="mySlides">
+				<div class="numbertext">2 / 9</div>
+				<img src="thumbnail_2.jpg" style="width:100%">
+			</div>
+	
+			<div class="mySlides">
+				<div class="numbertext">3 / 9</div>
+				<img src="thumbnail_3.jpg" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">4 / 9</div>
+				<img src="thumbnail_4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">5 / 9</div>
+				<img src="thumbnail_5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">6 / 9</div>
+				<img src="thumbnail_6.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">7 / 9</div>
+				<img src="thumbnail_7.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">8 / 9</div>
+				<img src="thumbnail_8.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">9 / 9</div>
+				<img src="thumbnail_9.jpg" style="width:100%">
+			</div>
+		</div>
+
+		
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<!-- Caption text -->
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+  
+			<!-- Thumbnail image controls -->
+			<div class="column">
+				<img class="demo" src="thumbnail_1.jpg" onclick="currentSlide(1)" alt="Nature">
+			</div>
+		
+			<div class="column">
+				<img class="demo" src="thumbnail_2.jpg" onclick="currentSlide(2)" alt="Snow">
+			</div>
+		
+			<div class="column">
+				<img class="demo" src="thumbnail_3.jpg" onclick="currentSlide(3)" alt="Mountains">
+			</div>
+		
+			<div class="column">
+				<img class="demo" src="thumbnail_4.jpg" onclick="currentSlide(4)" alt="Lights">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="thumbnail_5.jpg" onclick="currentSlide(3)" alt="Mountains">
+			</div>
+		
+			<div class="column">
+				<img class="demo" src="thumbnail_6.jpg" onclick="currentSlide(4)" alt="Lights">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="thumbnail_7.jpg" onclick="currentSlide(3)" alt="Mountains">
+			</div>
+		
+			<div class="column">
+				<img class="demo" src="thumbnail_8.jpg" onclick="currentSlide(4)" alt="Lights">
+			</div>
+			<div class="column">
+				<img class="demo" src="thumbnail_9.jpg" onclick="currentSlide(3)" alt="Mountains">
+			</div>
+		</div>
+  
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+		<!-- Caption text -->
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
 		
 		<!-- GALLERY -->
 		<section>
@@ -33,7 +170,13 @@
 			</div>
 			
 			<!--PHOTO CONTAINER 1 -->
-			<div>
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 9</div>
 				<img src="thumbnail_1.jpg"  with="200" height="121" alt="Image of The Paris Tower">
 				<h3>Click to enlarge</h3>
 				<p>We have thousands of Tourist visiting this tower yearly</p>
@@ -42,7 +185,8 @@
 			<!--END PHOTO CONTAINER 1 -->
 				
 			 <!--PHOTO CONTAINER 2 -->
-			<div>
+			 <div class="mySlides">
+				<div class="numbertext">2 / 9</div>
 				<img src="thumbnail_2.jpg" with="200" height="121" alt="The Lake Louis View">
 				<h3>Click to enlarge</h3>
 				<p>We have thousands of Tourist visiting this site yearly</p>
@@ -51,7 +195,8 @@
 			<!--END PHOTO CONTAINER 2 -->
 				
 			<!--PHOTO CONTAINER 3 -->
-			<div>
+			<div class="mySlides">
+				<div class="numbertext">3 / 9</div>
 				<img src="thumbnail_3.jpg" with="200" height="121" alt="Another View From Banf">
 				<h3>Click to enlarge</h3>
 				<p>We have thousands of Tourist visiting Baff yearly</p>
@@ -60,7 +205,8 @@
 			<!--END PHOTO CONTAINER 3 -->
 				
 			<!--PHOTO CONTAINER 4 -->
-			<div>
+			<div class="mySlides">
+				<div class="numbertext">4 / 9</div>
 				<img src="thumbnail_4.jpg" with="200" height="121" alt="Banf View From Another Angle">
 				<h3>Click to enlarge</h3>
 				<p>We have thousands of Tourist visiting Baff yearly</p>
@@ -69,7 +215,8 @@
 			<!--END PHOTO CONTAINER 4 -->
 				
 			<!--PHOTO CONTAINER 5 -->
-			<div>
+			<div class="mySlides">
+				<div class="numbertext">5 / 9</div>
 				<img src="thumbnail_5.jpg" with="200" height="121" alt="Image Of An Ancient Home">
 					
 				<h3>Click to enlarge</h3>
@@ -79,7 +226,8 @@
 			<!--END PHOTO CONTAINER 5 -->
 				
 			<!--PHOTO CONTAINER 6 -->
-			<div>
+			<div class="mySlides">
+				<div class="numbertext">6 / 9</div>
 				<img src="thumbnail_6.jpg" with="200" height="121" alt="Image of The Bow River">
 				<h3>Click to enlarge</h3>
 				<p>We have thousands of Tourist visiting this river yearly</p>
@@ -88,7 +236,8 @@
 			<!--END PHOTO CONTAINER 6 -->
 				
 			<!--PHOTO CONTAINER 7 -->
-			<div>
+			<div class="mySlides">
+				<div class="numbertext">7 / 9</div>
 				<img src="thumbnail_7.jpg" with="200" height="121" alt="Image of Baff At Night">
 				<h3>Click to enlarge</h3>
 				<p>We have thousands of Tourist visiting Baff yearly</p>
@@ -97,7 +246,8 @@
 			<!--END PHOTO CONTAINER 7 -->
 				
 				<!--PHOTO CONTAINER 8 -->
-			<div>
+				<div class="mySlides">
+					<div class="numbertext">8 / 9</div>
 				<img src="thumbnail_8.jpg" with="200" height="121" alt="Image of Lake Louis 1">
 				<h3>Click to enlarge</h3>
 				<p>We have thousands of Tourist visiting this tower yearly</p>
@@ -106,7 +256,8 @@
 			<!--END PHOTO CONTAINER 8 -->
 				
 			<!--PHOTO CONTAINER 9 -->
-			<div>
+			<div class="mySlides">
+				<div class="numbertext">9 / 9</div>
 				<img src="thumbnail_9.jpg" with="200" height="121" alt="Image of Lake Louis 2">
 				<h3>Click to enlarge</h3>
 				<p>We have thousands of Tourist visiting this tower yearly</p>
